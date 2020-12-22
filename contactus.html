@@ -86,7 +86,8 @@
         <div class="btn-group" role="group">
           <a class="btn btn-primary" role="button" href="tel:+0311234567890"><i class="fa fa-phone"></i> Call</a>
           <a class="btn btn-info" role="button"><i class="fa fa-skype"></i>Skype</a>
-          <a class="btn btn-success" role ="button" href="mailto:dude@test.com"><i class="fa fa-envelope-o"></i> Email us!</a>
+          <a class="btn btn-success" role="button" href="mailto:dude@test.com"><i class="fa fa-envelope-o"></i> Email
+            us!</a>
         </div>
 
       </div>
@@ -97,9 +98,66 @@
         <h3>Send us your Feedback</h3>
       </div>
       <div class="col-12 col-md-9">
-        Form goes here
-      </div>
-      <div class="col-12 col-md">
+        <form>
+          <div class="form-group row">
+            <label class="col-md-2 col-form-label" for="firstname">First Name</label>
+            <div class="col-md-10">
+              <input class="form-control" type="text" id="firstname" name="firstname" placeholder="First Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-2 col-form-label" for="lastname">Last Name</label>
+            <div class="col-md-10">
+              <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-12 col-md-12 col-form-label" for="telnum">Contact tel.</label>
+            <div class="col-5 col-md-3">
+              <input class="form-control" type="tel" placeholder="Area code" id="areacode" name="areacode">
+            </div>
+            <div class="col-7 col-md-7">
+              <input class="form-control" type="tel" placeholder="Tel number" id="telnum" name="telnum">
+            </div>
+
+          </div>
+          <div class="form-group row">
+            <label class="col-md-2 col-form-label" for="email">Email</label>
+            <div class="col-md-10">
+              <input class="form-control" type="email" id="email" name="email" placeholder="email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-6 offset-md-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="approve" name="approve" value="">
+                <label class="form-check-label" for="approve">
+                  <strong>May we contact you?</strong>
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3 offset-1">
+              <select class="form-control">
+                <option>Tel</option>
+                <option>Email</option>
+              </select>
+            </div>
+
+          </div>
+          <div class="form-group row">
+            <label class="col-md-2 col-form-label">Your Feedback</label>
+            <div class="col-md-10">
+              <textarea class="form-control" rows="12"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="offset-md-2 col-md-10">
+              <button class="btn btn-primary" type="submit">Send Feedback</button>
+            </div>
+          </div>
+
+        </form>
       </div>
     </div>
 
